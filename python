@@ -1,0 +1,12 @@
+import requests
+import threading
+
+def attack():
+  while True:
+    resp = request.get('xxxxx', headers={'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36'})
+
+
+if __name__ == '__main__':
+    with ThreadPoolExecutor(10) as t:
+        for i in range(100):
+            t.submit(attack)
